@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jane Doe - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Jane Doe
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          jdoe@jeemail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +13456764598
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me"><menuopt>About Me</menuopt></a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+          <a class="topmenu" href="#skills"><menuopt>Skills</menuopt></a>
+          <a class="topmenu" href="#projects"><menuopt>Projects</menuopt></a>
+          <a class="topmenu" href="#recommendations"><menuopt>Recommendations</menuopt></a>
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="html_finalprojimages/programmerc.png" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Sandy Winter! <img src="html_finalprojimages/317-3170307_waving-hand-png-transparent-png.png" width="60px"/>
+          </h1>
+          <p>
+            I am a full stack developer with 8 years of experience in both application and presentation layers.
+            I have worked on applications and microservices deployed on IBM Cloud. 
+            I have developed applications for trucking, rail, and e-commerce.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>1.5 years experience</p>
+        </div>  
+
+        <!-- Add more skills here -->
+        <div class="skill">
+            <img src="html_finalprojimages/java.png"/>
+            <h6>Java</h6>
+            <p>1 years experience</p>
+          </div> 
+
+        <div class="skill">
+            <img src="html_finalprojimages/react.png"/>
+            <h6>React</h6>
+            <p>0.5 years experience</p>
+        </div> 
+
+        <div class="skill">
+            <img src="html_finalprojimages/node.png"/>
+            <h6>Node</h6>
+            <p>1 years experience</p>
+          </div> 
+
+        <div class="skill">
+            <img src="html_finalprojimages/CSS3.png"/>
+            <h6>CSS</h6>
+            <p>2 years experience</p>
+        </div> 
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+            <div class="project-card">
+                <h3>Trucking</h3>
+                <ul>
+                  <li>Developed and deployed a new trucking website with html, CSS, and Javascript.  
+                      The site provides information to the trucker on terminal wait times, 
+                      and alerts when wait times exceed certain thresholds.</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="project-card">
+               <h3>Rail</h3>
+               <ul>
+                  <li>Developed and deployed a web application for rail which analyses the best routes 
+                      to minimize tolls, provides railcar tracking, and estimates arrival times for 
+                      deliveries.</li>
+               </ul>
+            </div>
+            <hr>
+            <div class="project-card">
+               <h3>Retail Website</h3>
+               <ul>
+                 <li>Created a new secure, multi page, styled website with integrated shopping cart 
+                     for a small retail store.</li>
+               </ul>
+            </div>   
+         </div>
+       </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Sandy is an experienced full stack web developer.  
+          She works well with the team and is always willing to advise others.
+          The project was delivered on time and on budget and matched the expectations of the client.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Working with Sandy was a real pleasure.
+          She is knowledgeable and knows how to listen to the needs of the customer.
+          I would highly recommend her, and would love to work with her again.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Sandy really knows what she is doing and delivers a quality product.
+          She is helpful to the team, and a real pleasure to work with. 
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+           <span>&#8220;</span>
+           I would be pleased to work with Sandy again, anytime.
+           She is able to talk to the clients to figure out what they need, and 
+           delivers a well working page that matches the specifications. 
+           <span>&#8221;</span>
+          </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input id="new_name" type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div id="go-home" class="iconbutton">
+        <a href="#home">
+          <img src="html_finalprojimages/21-217915_curved-white-arrow-png-white-up-arrow-icon.png"  />
+        </a>
+      </div>
+
+    <div class="popup" id="new_popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Thankyou for submitting your recommendation.</h3>
+      <button onclick="showPopup(false)">Ok</button> 
+    </div>
+  </body>
+</html>
+
